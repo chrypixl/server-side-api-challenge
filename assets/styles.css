@@ -1,0 +1,50 @@
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    height: 100px;
+    color: white;
+    
+    background-image: linear-gradient(to right, rgb(149, 236, 255), rgb(0, 0, 128));
+}
+
+main {
+    margin: 20px;
+}
+
+h2 {
+    font-weight: bolder;
+    size: 20px;
+}
+
+container.container-fluid {
+    border: black solid 1px;
+    align-items:center;
+}
+
+.card {
+    color: lightgray;
+    background-color: rgb(47, 53, 67);
+    border-radius: 8px;
+    margin: 6px 0px 6px 0px;
+    height: 200px;
+}
+
+#sidebar {
+    padding: 5px 10px 5px 10px;
+    border: black solid 0px 0px 1px 0px;
+}
+
+#submit-btn {
+    color: lightgray;
+    background-image: linear-gradient(to right, rgb(68, 171, 255), darkblue);
+}
+
+@media screen and (max-width: 992px) {
+    .card-group {
+        flex-direction: column;
+    }
+}
