@@ -7,7 +7,6 @@ h1 {
     font-weight: bolder;
     height: 100px;
     color: white;
-    
     background-image: linear-gradient(to right, rgb(149, 236, 255), rgb(0, 0, 128));
 }
 
@@ -41,6 +40,7 @@ container.container-fluid {
 #submit-btn {
     color: lightgray;
     background-image: linear-gradient(to right, rgb(68, 171, 255), darkblue);
+    padding: 8px 60px;
 }
 
 @media screen and (max-width: 992px) {
