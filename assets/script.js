@@ -1,14 +1,29 @@
+const city = "cityInput";
+const apiKey = "4487b9303d1ed3329bcd012966489cc8";
+const queryURL = `http://api.openweathermap.org/data/2.5/forecast?q=${newCity.value}&appid=${apiKey}`;
+
 function getInfo() {
-    const newName = document.getElementById("cityInput");
-    const cityName = document.getElementById("localHeader");
-    cityName.innerHTML = `${newName}`;
-};
+    const newCity = document.getElementById("cityInput");
+    const localHeader = document.getElementById("localHeader");
+    localHeader.innerHTML = newCity.value;
+}
 
-//fetch (api.openweathermap.org/data/2.5/forecast?q=`${cityName}`&appid=4487b9303d1ed3329bcd012966489cc8);
+fetch (queryURL)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok.');
+        }
+        return response.json();
+    })
 
+    .then(data => {
+        for(i = 0; i < 5; i++){
+            document.getElementById("day" + (i + 1) + "temp").innerHTML ="temp"
+        }
+    })
+    .catch(error => {
+        console.error('There was a problem with fetch:', error);
+    });
 
-document.getElementById(cityName).addEventListener("submit", getInfo);
-
-
-//api.openweathermap.org/data/2.5/forecast?lat=31.556770&lon=-97.129990&appid=4487b9303d1ed3329bcd012966489cc8;
+//api.openweathermap.org/data/2.5/forecast?q=houston&appid=4487b9303d1ed3329bcd012966489cc8;
 //API Key: 4487b9303d1ed3329bcd012966489cc8

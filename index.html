@@ -17,9 +17,9 @@
             <div class="col-3">
                 <div class="row" id="sidebar">
                     <h2>Search for a City:</h2>
-                    <form>
+                    <form id="cityForm">
                         <input type="text" class="form-control" placeholder="City" aria-label="City" id="cityInput">
-                        <button type="submit" class="btn btn-outline-info" id="submit-btn">Submit</button>
+                        <button type="button" class="btn btn-outline-info" id="submit-btn" onclick="getInfo()">Submit</button>
                     </form>
                 </div>
 
@@ -36,7 +36,7 @@
             <div class="col">
                 <div class="row">
                     <container class="container-fluid">
-                        <h2 id="local-header">*City*</h2>
+                        <h2 id="localHeader">*City*</h2>
 
                         <p>
                             Temp: 
