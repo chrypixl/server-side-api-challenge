@@ -54,10 +54,10 @@ function storeSearch(newCity) {
     }
 };
 
-function restoreDefault() {
+/*function restoreDefault() {
     document.getElementById("cityInput").defaultValue = "Houston";
     getInfo();
-};
+};*/
 
 //ToDo: Make sure search history is saved to local storage.
 //ToDo: Add displayCities function to display search history in sidebar.
