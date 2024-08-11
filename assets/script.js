@@ -54,10 +54,10 @@ function storeSearch(newCity) {
     }
 };
 
-/*function restoreDefault() {
+function restoreDefault() {
     document.getElementById("cityInput").defaultValue = "Houston";
     getInfo();
-};*/
+};
 
 //ToDo: Make sure search history is saved to local storage.
 //ToDo: Add displayCities function to display search history in sidebar.
@@ -65,3 +65,4 @@ function storeSearch(newCity) {
 //ToDo: You forgot to add dates to the API results in forecast cards.
 //ToDo: Consolidate for loops, lines 27-38.
 //!Bug fix: Weather icon does not appear on current weather card.
+//!Bug fix: New issue discovered - Application will not work if using the deployed link, but works fine when opening index.html in the browser. 
